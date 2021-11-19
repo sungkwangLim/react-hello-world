@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 const element =  (
@@ -10,23 +10,33 @@ const element =  (
 function greeting(name){
   return `hello ${name}`;
 }
+function Greet(){
+  return (
+    <div>
+      <h1>컴포넌트추가</h1>
+    </div>
+  );
+}
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <div>
           {element}
-        </p>
+        </div>
         <div>{greeting('JH')}</div>
-        <a
+        <Greet
+          className="asdf"
+        />
+        {/* <a
           className="App-link app-start"          
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );

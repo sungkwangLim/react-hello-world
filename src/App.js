@@ -10,10 +10,10 @@ const element =  (
 function greeting(name){
   return `hello ${name}`;
 }
-function Greet(){
+function Greet(props){
   return (
-    <div>
-      <h1>컴포넌트추가</h1>
+    <div className={props.ccl}>
+      <h1>컴포넌트추가 {props.number}</h1>
     </div>
   );
 }
@@ -27,7 +27,15 @@ function App() {
         </div>
         <div>{greeting('JH')}</div>
         <Greet
-          className="asdf"
+          number={"1"}
+          ccl={"asdf"}
+        />
+        <Greet
+          number="2"
+          ccl={"asdf2"}
+        />
+        <Greet
+          number="3"
         />
         {/* <a
           className="App-link app-start"          

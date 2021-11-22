@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import {Clock} from './components/clock.js';
 
 const element =  (
   <div>
@@ -37,6 +38,7 @@ function App() {
         <Greet
           number="3"
         />
+        <Clock value="111" />
         {/* <a
           className="App-link app-start"          
           href="https://reactjs.org"

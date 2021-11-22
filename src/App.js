@@ -38,7 +38,7 @@ function App() {
         <Greet
           number="3"
         />
-        <Clock value="111" />
+        <Clock value={33} value2={44}  />
         {/* <a
           className="App-link app-start"          
           href="https://reactjs.org"

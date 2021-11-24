@@ -27,6 +27,12 @@ class Clock extends Component {
         }))
         console.log(this)
     }
+    onClickHander(msg){
+        console.log(msg);
+        return()=>{
+            console.log("리턴값이 전달된다.");
+        }
+    }
     render(){
         return (
             <div>
@@ -34,6 +40,7 @@ class Clock extends Component {
                 <div>{this.state.date.toLocaleTimeString()}</div>
                 <div>{this.state.num}</div>
                 <button onClick={this.clickEvt}>num+</button>
+                <button onClick={()=>this.onClickHander('bb')}>bb</button>
             </div>
         );
     }

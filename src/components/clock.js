@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+const myArray = ['apple', 'banana', 'orange'];
 
+const myList = myArray.map((item) => <p>{item}</p>)
 class Clock extends Component {
     constructor(props){
         super(props)
         this.state = {
             date : new Date(),
-            num : this.props.value
+            num : this.props.value2.asdf
         };        
     }
     componentDidMount(){
@@ -41,6 +43,7 @@ class Clock extends Component {
                 <div>{this.state.num}</div>
                 <button onClick={this.clickEvt}>num+</button>
                 <button onClick={()=>this.onClickHander('bb')}>bb</button>
+                {myList}
             </div>
         );
     }

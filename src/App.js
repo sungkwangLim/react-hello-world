@@ -19,6 +19,10 @@ function Greet(props){
   );
 }
 function App() {
+  const bbb = {
+    'asdf' : 1,
+    'asdf2' : '2'
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -38,7 +42,7 @@ function App() {
         <Greet
           number="3"
         />
-        <Clock value={33} value2={44}  />
+        <Clock value={33} value2={bbb}  />
         {/* <a
           className="App-link app-start"          
           href="https://reactjs.org"
@@ -46,7 +50,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a> */}
+        </a> */}        
       </header>
     </div>
   );
